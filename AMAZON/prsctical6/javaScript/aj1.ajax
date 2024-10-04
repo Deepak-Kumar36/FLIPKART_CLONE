@@ -1,0 +1,53 @@
+“ajax.html”
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h1>Ajax tutorial</h1>
+<button type="button" id="fetchbtn" class="btn btn-primary">Fetch data</button>
+<button type="button" id="popbtn" class="btn btn-secondary">Fetch data</button>
+<div class="container">
+<h1>Employee list</h1>
+<ul id="list">
+</ul>
+<div>
+<script src="ajax.js"></script>
+</div>
+</div>
+</body>
+</html>
+“ajax.js”
+console.log("Ajax Tutorial");
+let fetchbutton = document.getElementById('fetchbtn'); fetchbutton.addEventListener('click',buttonclickhandler) function buttonclickhandler()
+{
+console.log('You have clicked the fetch button')
+// Instantiate an xhr object create an object const xhr = new XMLHttpRequest();
+// open the object xhr.open('GET','11.txt', true);
+//what to do on progress xhr.onprogress = function()
+{
+console.log("On Progress");
+ 
+}
+//on readyState change xhr.onreadystatechange = function()
+{
+console.log('Ready State is',xhr.readyState);
+}
+//What to do when response is ready
+{
+xhr.onload = function()
+{
+if(this.status===200)
+{
+console.log(this.responseText)
+}
+else
+{
+console.error("File Not Found");
+}
+}
+// send the request xhr.send();
+}
+}

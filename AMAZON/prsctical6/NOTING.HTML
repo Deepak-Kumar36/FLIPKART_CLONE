@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photography Workshop</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Bricolage Grotesque", sans-serif;
+    }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+    #main {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    #main h1 {
+      font-family: 'Francois One', sans-serif;
+      font-size: 35px;
+      margin-bottom: 5px;
+      padding: .7vw 1vw;
+      text-shadow: 2px 2px 3px rgb(172, 172, 172);
+    }
+    #main #img-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #img-container img {
+      width: 22%;
+      object-fit: cover;
+      border-radius: 10px;
+      outline: 5px solid black;
+      outline-offset: 5px;
+    }
+    #first-p p {
+      padding: 1.2vw 1vw;
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    #details {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 3vw;
+    }
+    #details table,
+    th,
+    td {
+      border: 1px solid rgb(54, 53, 53);
+      padding: 0.4vw 0.5vw;
+    }
+    #register {
+      width: 100%;
+      padding: 0 1vw;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 5vw;
+      margin-top: 22px;
+    }
+    #register h2 {
+      font-size: 25px;
+    }
+    .btn {
+      width: 8vw;
+      padding: 6px 4px;
+      border: none;
+      outline: none;
+      border-radius: 100px;
+      transition: all ease 0.5s;
+    }
+    .btn a {
+      font-family: 'Dosis', sans-serif;
+      font-size: 15px;
+    }
+    footer {
+      width: 100%;
+      padding: 1.2vw 1vw;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #foot-p {
+      font-family: 'Dosis', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    #foot-p a {
+      font-family: 'Dosis', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body style="padding: 20px 20px">
+  <div id="main" style="border: 3px solid #000">
+    <h1 style="text-align: center;
+      text-transform: uppercase; 
+      word-spacing: 7px;
+    letter-spacing: 4px;">
+      Welcome to the Photography Workshop!
+    </h1>
+    <div id="img-container">
+      <img src="./photo.jpg" alt="Photography Workshop Banner" />
+    </div>
+    <div id="first-p">
+      <p>
+        Join us for an immersive photography workshop where you'll learn the
+        art of capturing breathtaking moments through your lens.
+      </p>
+    </div>
+    <div id="details">
+      <table style="width: 50%">
+        <tr>
+          <th><b>Workshop Details</b></th>
+          <th><b>What You'll Learn</b></th>
+          <th><b>Workshop Schedule</b></th>
+        </tr>
+        <tr>
+          <td>Date: October 10-12, 2023</td>
+          <td>The basics of photography</td>
+          <td>10:00 to 12:00 AM</td>
+        </tr>
+        <tr>
+          <td>Location: Sunny Valley Retreat</td>
+          <td>Composition and framing</td>
+          <td>01:00 to 3:00 PM</td>
+        </tr>
+        <tr>
+          <td>Duration: 3 days</td>
+          <td>Understanding lighting</td>
+          <td>04:00 to 6:00 PM</td>
+        </tr>
+      </table>
+    </div>
+    <div id="register">
+      <h2 style="text-decoration: underline;
+      font-family: 'Francois One', sans-serif;">Register Now:</h2>
+      <p>
+        Secure your spot by registering for the workshop! Click on this link
+        below.
+      </p>
+      <button class="btn" style="font-size: 0.8rem; color: #fff; background-color: black">
+        <a href="#" style="text-decoration:none; color:#fff;">Register Now</a>
+      </button>
+    </div>
+    <footer style="border-top: 5px solid rgb(207, 207, 207)">
+      <p id="foot-p">
+        Contact us at
+        <a href="mailto:info@photoworkshop.com">info@photoworkshop.com</a>
+        for any inquiries.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+js ia a language 
+managed by ecma script 
+matlab naye features lana purane features htana kahar features sahi karna overall development of js
+js has mainly two types es5 and es6
+es5 and es6
+var      let
+our chrome has both es5 and es6  feature so we can wrte both var an let
+js the language mein ham code likhna seekhna hai
+js the dom mein code likh ke cheje bnana seekhna
+prompt alert ka bhada bhai hai jo alert se ek kadam aage hai 
